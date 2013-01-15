@@ -18,3 +18,5 @@ Rails Logging
       end
       alias_method_chain :call, :quiet_assets
     end
+
+参考 http://stackoverflow.com/a/9179514/260793
