@@ -8,6 +8,7 @@ Contents:
 
    devise
    cancan
+   authlogic
 
 Indices and tables
 ==================
