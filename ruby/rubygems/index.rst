@@ -9,6 +9,7 @@ Contents:
    devise
    cancan
    authlogic
+   rmre
 
 Indices and tables
 ==================
