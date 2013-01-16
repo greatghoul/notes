@@ -1,10 +1,10 @@
-.. Development Notes documentation master file, created by
-   sphinx-quickstart on Mon Jan 14 11:52:33 2013.
+.. 笔记 documentation master file, created by
+   sphinx-quickstart on Wed Jan 16 09:55:01 2013.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Development Notes
-=================
+笔记
+=======
 
 Contents:
 

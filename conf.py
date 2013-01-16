@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# Development Notes documentation build configuration file, created by
-# sphinx-quickstart on Mon Jan 14 11:52:33 2013.
+# 笔记 documentation build configuration file, created by
+# sphinx-quickstart on Wed Jan 16 09:55:01 2013.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = ['sphinx.ext.autodoc']
+extensions = []
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -104,10 +104,10 @@ html_theme_path = ['_themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = '笔记'
+html_title = u'笔记'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = '笔记'
+html_short_title = u'笔记'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -121,7 +121,7 @@ html_short_title = '笔记'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-# html_static_path = ['_static']
+html_static_path = ['_static']
 
 # If not '', a 'Last updated on:' timestamp is inserted at every page bottom,
 # using the given strftime format.
@@ -139,7 +139,7 @@ html_short_title = '笔记'
 #html_additional_pages = {}
 
 # If false, no module index is generated.
-html_domain_indices = False
+#html_domain_indices = True
 
 # If false, no index is generated.
 html_use_index = True
@@ -165,7 +165,7 @@ html_show_copyright = True
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Notes'
+htmlhelp_basename = 'doc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -184,7 +184,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'DevelopmentNotes.tex', u'Development Notes Documentation',
+  ('index', '.tex', u'笔记',
    u'greatghoul', 'manual'),
 ]
 
@@ -214,7 +214,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', u'笔记', u'笔记', [u'greatghoul'], 1)
+    ('index', '', u'笔记',
+     [u'greatghoul'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -227,8 +228,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'DevelopmentNotes', u'Development Notes Documentation',
-   u'greatghoul', 'DevelopmentNotes', u'笔记',
+  ('index', '', u'笔记',
+   u'greatghoul', '', u'笔记',
    'Miscellaneous'),
 ]
 
@@ -240,46 +241,3 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
-
-
-# -- Options for Epub output ---------------------------------------------------
-
-# Bibliographic Dublin Core info.
-epub_title = u'Development Notes'
-epub_author = u'greatghoul'
-epub_publisher = u'greatghoul'
-epub_copyright = u'2013, greatghoul'
-
-# The language of the text. It defaults to the language option
-# or en if the language is not set.
-#epub_language = ''
-
-# The scheme of the identifier. Typical schemes are ISBN or URL.
-#epub_scheme = ''
-
-# The unique identifier of the text. This can be a ISBN number
-# or the project homepage.
-#epub_identifier = ''
-
-# A unique identification for the text.
-#epub_uid = ''
-
-# A tuple containing the cover image and cover page html template filenames.
-#epub_cover = ()
-
-# HTML files that should be inserted before the pages created by sphinx.
-# The format is a list of tuples containing the path and title.
-#epub_pre_files = []
-
-# HTML files shat should be inserted after the pages created by sphinx.
-# The format is a list of tuples containing the path and title.
-#epub_post_files = []
-
-# A list of files that should not be packed into the epub file.
-#epub_exclude_files = []
-
-# The depth of the table of contents in toc.ncx.
-#epub_tocdepth = 3
-
-# Allow duplicate toc entries.
-#epub_tocdup = True
