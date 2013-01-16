@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Development Notes'
+project = u'笔记'
 copyright = u'2013, greatghoul'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -104,10 +104,10 @@ html_theme_path = ['_themes']
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-html_title = 'Development Notes'
+html_title = '笔记'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
-html_short_title = 'Notes'
+html_short_title = '笔记'
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
@@ -165,7 +165,7 @@ html_show_copyright = True
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'DevelopmentNotesdoc'
+htmlhelp_basename = 'Notes'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -214,8 +214,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'developmentnotes', u'Development Notes Documentation',
-     [u'greatghoul'], 1)
+    ('index', u'笔记', u'笔记', [u'greatghoul'], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -229,7 +228,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
   ('index', 'DevelopmentNotes', u'Development Notes Documentation',
-   u'greatghoul', 'DevelopmentNotes', 'One line description of project.',
+   u'greatghoul', 'DevelopmentNotes', u'笔记',
    'Miscellaneous'),
 ]
 
