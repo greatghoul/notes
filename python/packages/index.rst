@@ -1,8 +1,7 @@
-Ruby开发笔记
+Python Packages
 ======================
 
 .. toctree::
    :maxdepth: 2
 
-   logging
-   rubygems/index
+   jinja2

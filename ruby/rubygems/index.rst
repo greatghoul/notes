@@ -1,8 +1,6 @@
 RubyGems Notes
 ======================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
@@ -10,10 +8,3 @@ Contents:
    cancan
    authlogic
    rmre
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`search`
-
