@@ -14,6 +14,7 @@
 
    ruby/index
    python/index
+   coffeescript/index
 
 Indices and tables
 ==================
