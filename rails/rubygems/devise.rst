@@ -6,7 +6,9 @@ Devise Notes
 
 自定义 layout
 ~~~~~~~~~~~~~~~~
-在 `config/initializers/devise.rb` 中加入 ::
+在 `config/initializers/devise.rb` 中加入
+
+.. code-block:: ruby
 
     Devise::SessionsController.layout "bar"
     Devise::RegistrationsController.layout "foo"

@@ -12,7 +12,7 @@
 .. toctree::
    :maxdepth: 2
 
-   ruby/index
+   rails/index
    python/index
    coffeescript/index
 
