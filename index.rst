@@ -15,6 +15,7 @@
    rails/index
    python/index
    coffeescript/index
+   git
 
 Indices and tables
 ==================
