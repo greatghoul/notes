@@ -3,11 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-笔记
-=======
-
-开发
------
+读书，开发，生活中的一些笔记
 
 .. toctree::
    :maxdepth: 2
