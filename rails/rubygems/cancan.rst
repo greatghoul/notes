@@ -16,17 +16,25 @@ CanCan 在验证时，需要加载一个 Model 用于检测权限，默认会检
 
 Action组合别名处理
 ~~~~~~~~~~~~~~~~~~~
-一般对于成组出现的权限，没有必要为每一个 action 都定一个 permission，可以这样做
+一般对于成组出现的权限，没有必要为每一个 action 都定一个 permission，
+可以在 ``app/models/ability.rb`` 中这样做
 
 .. code-block:: ruby
 
-    alias_action :diff, :merge, :to => :merge
-    can :merge, Customer
+    class Ability
+      include CanCan::Ability
+      
+      def initialize(user)
+        alias_action :check, :approve, :to => :approve
+        # ..
+      end
+    end
 
 然后在使用时可以直接
 
 .. code-block:: ruby
 
+    can :merge, Customer
     can? :merge, Customer
 
 Resources
