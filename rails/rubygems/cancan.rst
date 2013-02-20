@@ -14,6 +14,21 @@ CanCan 在验证时，需要加载一个 Model 用于检测权限，默认会检
     skip_load_and_authorize_resource # 忽略父控制器验证
     load_and_authorize_resource :class => Customer
 
+Action组合别名处理
+~~~~~~~~~~~~~~~~~~~
+一般对于成组出现的权限，没有必要为每一个 action 都定一个 permission，可以这样做
+
+.. code-block:: ruby
+
+    alias_action :diff, :merge, :to => :merge
+    can :merge, Customer
+
+然后在使用时可以直接
+
+.. code-block:: ruby
+
+    can? :merge, Customer
+
 Resources
 ---------
  * CanCan实作角色权限设计的最佳实践 `其1 <http://blog.xdite.net/posts/2012/07/30/cancan-rule-engine-authorization-based-library-1/>`_ `其2 <http://blog.xdite.net/posts/2012/07/30/cancan-rule-engine-authorization-based-library-2/>`_ `其3 <http://blog.xdite.net/posts/2012/07/30/cancan-rule-engine-authorization-based-library-3/>`_
