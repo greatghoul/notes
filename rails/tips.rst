@@ -23,3 +23,13 @@ redirect 时传递 flash 信息
 .. code-block:: ruby
 
     format.html { render '_form', :layout => false }      
+
+collection_select 设置 html_options
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: ruby
+    
+    collection_select(:user, :title, UserTitle.all, :id, :name, {}, {:class=>'my-custom-class'})
+    collection_select(:user, :title, UserTitle.all, :id, :name, {:prompt=>true}, {:class=>'my-custom-class'})
+
+参考资料： http://stackoverflow.com/questions/1947578/how-do-i-set-the-html-options-for-collection-select-in-rails
