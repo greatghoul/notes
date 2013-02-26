@@ -28,3 +28,13 @@ GIT笔记
     ./configure
     make
     sudo make install
+
+Tips
+---------
+
+在本地删除已经不存在的remote分支
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+在 github pull request 合并后，可以直接删除被合并的 remote 分支，而此时本地仓库中的 remote 分支的引用并没有删除，要与服务器上保持同步，则需要::
+
+    git fetch -p
