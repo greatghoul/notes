@@ -1,4 +1,4 @@
-Rails技巧
+Tips
 =============
 
 create 和 new 创建对象的区别
@@ -32,6 +32,8 @@ collection_select 设置 html_options
     collection_select(:user, :title, UserTitle.all, :id, :name, {}, {:class=>'my-custom-class'})
     collection_select(:user, :title, UserTitle.all, :id, :name, {:prompt=>true}, {:class=>'my-custom-class'})
 
+参考资料： http://stackoverflow.com/questions/1947578/how-do-i-set-the-html-options-for-collection-select-in-rails
+
 Action 跳转回之前页面
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -44,4 +46,19 @@ Rails 对于跳转回之前页面这样的操作做了非常方便的支持
       redirect_to :back
     end
 
-参考资料： http://stackoverflow.com/questions/1947578/how-do-i-set-the-html-options-for-collection-select-in-rails
+在可能为空的对象上安全的调用方法
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+我们可能需要在一个对象上调用方法，但不能提前预知该对象是否是 `nil` ，ruby 为我们提供了非常安全的调用方法。
+
+.. code-block:: ruby
+
+    obj.try(:method_name)
+
+如何，只会在 `obj` 不是 `nil` 的情况下去调用 `method_name` 方法，它等价于
+
+.. code-block:: ruby
+
+    obj.nil? ? nil : obj.method_name
+
+参考资料： http://stackoverflow.com/a/9595649/260793
