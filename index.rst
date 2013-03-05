@@ -12,6 +12,7 @@
    python/index
    coffeescript/index
    git
+   tidesdk
 
 Indices and tables
 ==================
