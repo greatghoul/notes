@@ -13,6 +13,7 @@
    coffeescript/index
    git
    tidesdk
+   sae/index
 
 Indices and tables
 ==================
