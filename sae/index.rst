@@ -10,5 +10,5 @@ https://github.com/SAEPython/saepythondevguide
 
 **参考资料**
 
-.. include:: .\refs.rst 
+.. include:: refs.rst 
    :start-line: 2
