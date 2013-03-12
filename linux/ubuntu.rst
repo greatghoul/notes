@@ -27,3 +27,12 @@ XUBUNTU下出现WARNING: gnome-keyring的问题
 .. note:: 这里有个小技巧，先不要插入U盘， 输入 `sudo dd if=/path/to/your/iso of=/dev/sd` 后按 `Tab` 补全，会列出匹配的设备列表，此时插入U盘，再次按 `Tab` 补全，新出来的那个设备就是你的 U 盘了。
 
 参考资料： http://askubuntu.com/questions/59551/how-to-burn-iso-to-usb-device
+
+rpm 包转 deb 包
+~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: shell
+
+    sudo apt-get install alien
+    sudo alien xxx.rpm
+    sudo dpkg -i xxx.deb
