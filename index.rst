@@ -26,7 +26,7 @@
 操作系统
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
 
    linux/index
 
