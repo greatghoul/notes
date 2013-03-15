@@ -5,3 +5,4 @@ Python Packages
    :maxdepth: 2
 
    jinja2
+   sqlalchemy
