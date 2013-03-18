@@ -15,3 +15,4 @@ dict转对象
     >>> obj.__dict__.update(dict(name='18da'))
     >>> obj.name
     '18da'
+
