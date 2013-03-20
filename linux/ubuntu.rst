@@ -20,7 +20,7 @@ XUBUNTU下出现WARNING: gnome-keyring的问题
 ~~~~~~~~~~~~~~~~~~~
 比如 USB 的设置位置为 `/dev/sdb` 
 
-.. code-block:: shell
+.. code-block:: bash
 
     sudo dd if=/path/to/your/iso of=/dev/sdb
 
@@ -31,8 +31,30 @@ XUBUNTU下出现WARNING: gnome-keyring的问题
 rpm 包转 deb 包
 ~~~~~~~~~~~~~~~~~~~~
 
-.. code-block:: shell
+.. code-block:: bash
 
     sudo apt-get install alien
     sudo alien xxx.rpm
     sudo dpkg -i xxx.deb
+
+卸载 Unity 安装 Gnome Shell
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+安装 Gnome Shell，安装时 Display Manager 选择 **lightdm**
+
+.. code-block:: bash
+
+    sudo apt-get install gnome-shell       
+    sudo apt-get install gnome-themes*
+    sudo  /usr/lib/lightdm/lightdm-set-defaults  -s  gnome-shell
+
+安装完成后重新启动，登陆界面选择会话时选择 **Gnome**
+
+.. code-block:: bash
+
+    sudo apt-get -y --auto-remove purge unity
+    sudo apt-get -y --auto-remove purge unity-common
+    sudo apt-get -y --auto-remove purge unity-lens*
+    sudo apt-get -y --auto-remove purge unity-services
+    sudo apt-get -y --auto-remove purge unity-asset-pool
+
+参考： http://garfield550.diandian.com/linux/00128
