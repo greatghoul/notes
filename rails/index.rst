@@ -2,8 +2,9 @@ Rails开发笔记
 ======================
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
 
    tips
+   views
    logging
    rubygems/index

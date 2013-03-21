@@ -62,3 +62,17 @@ Rails 对于跳转回之前页面这样的操作做了非常方便的支持
     obj.nil? ? nil : obj.method_name
 
 参考资料： http://stackoverflow.com/a/9595649/260793
+
+
+设置 rails 日志格式
+~~~~~~~~~~~~~~~~~~~~~~~
+
+`config\enviroment.rb`
+
+.. code-block:: ruby
+
+    class Logger
+      def format_message(level, time, progname, msg)
+        "#{time.to_s(:db)} #{level} -- #{msg}\n"
+      end
+    end
