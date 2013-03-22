@@ -32,3 +32,26 @@ CoffeeScript笔记
 ----------------------
 
 使用 `->` 和 `=>` 回调，其 `@` 的引用是不同的， `->` 时， `@` 指带调用者，而 `=>` 时指代的是 `document`
+
+显示返回对象类型
+----------------
+
+.. code-block:: coffeeScript
+
+    myFunc = ->
+      return {
+        id   : 3
+        name : 'myname'
+      }
+
+    myFunc = ->
+      return {} =
+        id   : 3
+        name : 'myname'
+
+    myFunc = ->
+      # return
+      id   : 3
+      name : 'myname'
+
+参考 http://stackoverflow.com/a/4908015/260793
