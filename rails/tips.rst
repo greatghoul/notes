@@ -76,3 +76,22 @@ Rails 对于跳转回之前页面这样的操作做了非常方便的支持
         "#{time.to_s(:db)} #{level} -- #{msg}\n"
       end
     end
+
+使用rails缓存
+~~~~~~~~~~~~~~~
+
+development默认禁用缓存，修改 ``config/enviroments/development.rb`` 启用 
+
+.. code-block:: ruby
+
+    config.action_controller.perform_caching = true
+
+3种基本操作
+
+ * 读 ``Rails.cache.write 'foo', 'bar'``
+ * 写 ``Rails.cache.read 'foo'``
+ * 不存在则写，存在则读 ``Rails.cache.fetch 'a_big_data' do { (1..1000000).inject(:+) }``
+
+缓存默认是以文件形式保存，文件位置 ``./tmp/cache``
+
+参考 http://rubyer.me/blog/2012/09/04/speed-up-with-rails-cache/
