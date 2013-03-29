@@ -41,3 +41,27 @@ mysql-connector-python 为 mysql 官方出品，应该也比较可靠吧。
 参考： https://github.com/trentm/python-markdown2/blob/master/lib/markdown2.py
 
 
+监听 Model 字段变化
+~~~~~~~~~~~~~~~~~~~~~
+SqlAlchemy 为提供了一系列的 Event 接口来侦听数据及模型的各种动作，比如监听字段内容的变化
+
+.. code-block:: python
+
+    # import ...
+    from sqlalchemy import event
+
+    def article_content_changed(article, content, old_content, initiator):
+        """ 如果文章的正文变更，重新通过markdown转换html """
+
+        article.content_html = unicode(markdown(content))
+
+    event.listen(Article.content, 'set', article_content_changed)
+
+这样在用户更新 ``Article`` 模型的 ``content`` 字段时，就会自动调用绑定的 ``article_content_changed`` 方法。
+
+**参考资料** 
+
+* http://docs.sqlalchemy.org/en/rel_0_8/orm/events.html#attribute-events
+* http://stackoverflow.com/a/8911260/260793
+* http://www.sqlalchemy.org/trac/wiki/UsageRecipes/NamingConventions
+
