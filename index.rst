@@ -15,7 +15,8 @@
    coffeescript/index
    tidesdk
    sae/index
- 
+   jquery/index 
+
 开发及辅助工具
 
 .. toctree::
