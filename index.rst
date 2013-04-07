@@ -16,6 +16,7 @@
    tidesdk
    sae/index
    jquery/index 
+   javascript
 
 开发及辅助工具
 
