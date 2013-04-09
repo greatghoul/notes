@@ -58,3 +58,19 @@ rpm 包转 deb 包
     sudo apt-get -y --auto-remove purge unity-asset-pool
 
 参考： http://garfield550.diandian.com/linux/00128
+
+解决 Xfce4 Application Finder 启动缓慢的问题
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+``xfce4-appfinder`` 在启动时非常缓慢，在终端中启动时能看到如下错误信息 ::
+
+    (xfce4-appfinder:4167): xfce4-appfinder-CRITICAL **: Failed to open window: Did not receive a reply. Possible causes include: the remote application did not send a reply, the message bus security policy blocked the reply, the reply timeout expired, or the network connection was broken.
+
+要解决此问题，禁用 appfinder server 就行 ::
+
+    xfce4-appfinder --disable-server
+
+如果要使用类似 Windows ``Win+R`` 的效果，可以运行 ::
+
+    xfce4-appfinder -c --disable-server
+
+参考： http://ubuntuforums.org/showthread.php?t=2031253
