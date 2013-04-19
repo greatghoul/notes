@@ -6,3 +6,4 @@ Linux笔记
 
    common
    ubuntu
+   vagrant
