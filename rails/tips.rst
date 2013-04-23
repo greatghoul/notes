@@ -8,6 +8,21 @@ Tips
 
     rails new jqmodal-demo --skip-bundle --skip-activerecord
 
+the following must be in application.rb:
+
+.. code-block:: ruby
+
+    require "action_controller/railtie"
+    require "action_mailer/railtie"
+    require "active_resource/railtie"
+    require "rails/test_unit/railtie"
+
+Instead of
+
+.. code-block:: ruby
+
+    require 'rails/all'
+
 create 和 new 创建对象的区别
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
