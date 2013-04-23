@@ -1,6 +1,13 @@
 Tips
 =============
 
+建立 rails 应用时不生成数据库
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: bash
+
+    rails new jqmodal-demo --skip-bundle --skip-activerecord
+
 create 和 new 创建对象的区别
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
