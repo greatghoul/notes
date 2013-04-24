@@ -4,6 +4,13 @@ SqlAlchemy 笔记
 Tips & Tricks
 --------------
 
+查看对象的子集中是否包含某条记录
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+    q = Session.query(Articles).filter(Articles.tags.any(name = 'tag_name'))
+
 Windows 使用 mysql-connector-pyhton 替代 mysql_python
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
