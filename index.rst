@@ -32,6 +32,13 @@
 
    linux/index
 
+其它
+
+.. toctree::
+   :maxdepth: 2
+
+   reading/index
+ 
 Indices and tables
 ==================
 
