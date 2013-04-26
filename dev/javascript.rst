@@ -23,3 +23,14 @@ Tips & Tricks
     }
 
 参考： http://stackoverflow.com/a/1335347/260793
+
+页面刷新前弹出确认对话框
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+在 `onbeforeunload` 的事件中，不能够调用 `alert` 等对话框，只能返回一个字符串，该字符串会显示在确定对话框中。
+
+.. code-block:: javascript
+
+    window.onbeforeunload = function(event) {
+        return '确认要退出吗？';
+    };
