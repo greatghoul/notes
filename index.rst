@@ -5,39 +5,13 @@
 
 读书，开发，生活中的一些笔记
 
-开发语言和框架
-
 .. toctree::
-   :maxdepth: 1
+    :maxdepth: 2
 
-   rails/index
-   python/index
-   coffeescript/index
-   tidesdk
-   sae/index
-   jquery/index 
-   javascript
-
-开发及辅助工具
-
-.. toctree::
-   :maxdepth: 1
-
-   git
-
-操作系统
-
-.. toctree::
-   :maxdepth: 2
-
-   linux/index
-
-其它
-
-.. toctree::
-   :maxdepth: 2
-
-   reading/index
+    dev/index.rst
+    devtools/index.rst
+    os/index.rst
+    reading/index.rst
  
 Indices and tables
 ==================
