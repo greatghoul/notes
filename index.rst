@@ -12,6 +12,7 @@
     devtools/index.rst
     os/index.rst
     reading/index.rst
+    games/index.rst
  
 Indices and tables
 ==================
