@@ -11,6 +11,6 @@ https://github.com/SAEPython/saepythondevguide
     tips.rst
 
 
-参考资料：
+附录：
 
 .. include:: refs.rst

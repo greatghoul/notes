@@ -8,6 +8,7 @@
 
     rails/index.rst
     python/index.rst
+    cpp/index.rst
     coffeescript/index.rst
     tidesdk.rst
     sae/index.rst

@@ -20,7 +20,7 @@ HTML5 的游戏
 
 https://chrome.google.com/webstore/detail/faerie-alchemy-hd/imdilajngppdgdbemeighbingnbmpnpl?utm_source=chrome-ntp-icon
 
-.. images:: images/faerie.jpg
+.. image:: images/faerie.jpg
 
 
 Flash 游戏
@@ -30,7 +30,7 @@ Flash 游戏
 
 http://armorgames.com/play/3273/knightfall
 
-.. images:: images/knightfall.png 
+.. image:: images/knightfall.png 
 
 详细介绍： http://www.g2w.me/2012/03/knightfall/
 
@@ -39,7 +39,7 @@ http://armorgames.com/play/3273/knightfall
 
 http://www.tankionline.com/
 
-.. images:: images/tank-online-3d.png
+.. image:: images/tank-online-3d.png
 
 详细介绍： http://www.g2w.me/2012/03/tank-online-3d/
 
