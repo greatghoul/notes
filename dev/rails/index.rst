@@ -1,10 +1,12 @@
 Rails开发笔记
 ======================
 
+目录：
+
 .. toctree::
    :maxdepth: 2
 
-   tips
-   views
-   logging
-   rubygems/index
+   tips.rst
+   views.rst
+   logging.rst
+   gems/index.rst

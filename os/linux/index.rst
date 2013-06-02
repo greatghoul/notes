@@ -4,6 +4,7 @@ Linux笔记
 .. toctree::
    :maxdepth: 3
 
-   common
-   ubuntu
-   vagrant
+   common.rst
+   shell.rst
+   ubuntu.rst
+   vagrant.rst
