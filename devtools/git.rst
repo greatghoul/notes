@@ -1,7 +1,7 @@
-GIT笔记
+GIT使用笔记
 ==================
 
-安装GIT
+GIT安装
 -----------
 
 在CentOS中安装GIT
@@ -28,6 +28,35 @@ GIT笔记
     ./configure
     make
     sudo make install
+
+GIT配置
+--------------
+
+使用 https push 时记密码
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+近期由于墙的原因，Github 使用 ssh push 时经常卡死，于是为了稳定，只能切换到 https 的方式进行 push，但 https 每次都需要
+输入帐户和密码，相当麻烦，为了避免这种情况，需要配置 git 使其记住密码。
+
+**对于 1.7.9 及之后的版本**
+
+:: 
+
+    git config --global credential.helper cache
+
+如何希望加上失效时间，可以这样配置 ::
+
+    git config credential.helper 'cache --timeout=3600'
+
+就可以记住密码一个小时。
+
+**对于 1.7.9 之前的版本**
+
+需要显式的 git 地址中加入用户名和密码，如 ``https://you:password@github.com/you/example.git`` ::
+
+    git config remote.origin.url https://you:password@github.com/you/example.git
+
+参考：http://stackoverflow.com/a/5343146/260793
 
 Tips & Ticks
 ------------
