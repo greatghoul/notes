@@ -9,4 +9,5 @@ Rails开发笔记
    tips.rst
    views.rst
    logging.rst
+   config.rst
    gems/index.rst
