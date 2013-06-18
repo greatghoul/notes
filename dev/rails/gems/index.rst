@@ -11,3 +11,4 @@ RubyGems Notes
    authlogic.rst
    rmre.rst
    simple_form.rst
+   spreadsheet.rst

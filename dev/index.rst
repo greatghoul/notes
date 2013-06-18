@@ -6,11 +6,11 @@
 .. toctree::
     :maxdepth: 2
 
-    rails/index.rst
     python/index.rst
-    cpp/index.rst
+    rails/index.rst
     coffeescript/index.rst
-    tidesdk.rst
-    sae/index.rst
-    jquery/index.rst
     javascript.rst
+    jquery/index.rst
+    sae/index.rst
+    cpp/index.rst
+    tidesdk.rst
