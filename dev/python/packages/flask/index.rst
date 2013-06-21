@@ -12,3 +12,7 @@ Tips & Tricks
 
     os.environ.setdefault('WERKZEUG_RUN_MAIN', 'true')
 
+参考
+======
+
+.. include:: refs.rst
