@@ -14,6 +14,7 @@
     os/index.rst
     reading/index.rst
     games/index.rst
+    learning/index.rst
  
 Indices and tables
 ==================
