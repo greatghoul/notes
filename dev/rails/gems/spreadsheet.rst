@@ -41,6 +41,18 @@ spreadsheet 笔记
 
 这样会在第一行第一列设置单元为绿底白字
 
+可用的颜色有 ::
+
+    :builtin_black, :builtin_white, :builtin_red, :builtin_green,
+    :builtin_blue, :builtin_yellow, :builtin_magenta, :builtin_cyan,
+    :text, :border, :pattern_bg, :dialog_bg, :chart_text, :chart_bg,
+    :chart_border, :tooltip_bg, :tooltip_text, :aqua,
+    :black, :blue, :cyan, :brown, :fuchsia, :gray, :grey, :green,
+    :lime, :magenta, :navy, :orange, :purple, :red, :silver, :white,
+    :yellow
+
+其中 ``:border`` 为默认的边框颜色
+
 设置自动换行
 -------------
 
@@ -54,3 +66,12 @@ spreadsheet 笔记
     end
   end
 
+可用的边框
+-------------
+
+::
+
+    :thin, :medium, :dashed, :dotted, :thick, 
+    :double, :hair, :medium_dashed, :thin_dash_dotted,
+    :medium_dash_dotted, :thin_dash_dot_dotted,
+    :medium_dash_dot_dotted, :slanted_medium_dash_dotted

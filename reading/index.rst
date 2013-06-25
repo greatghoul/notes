@@ -4,5 +4,6 @@
 .. toctree::
    :maxdepth: 2
    
-   7habits
-   refactoring
+   7habits.rst
+   refactoring.rst
+   hackers-and-painters.rst
