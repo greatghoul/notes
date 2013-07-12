@@ -14,6 +14,7 @@
 .. code-block:: bat
 
     vagrant init precise32 ..\boxes\precise32.box
+
 需要注意的是，这里使用本地路径时，需要使用 Windows 风格的路径，即用 ``\`` 来作为路径分隔符。
 
 共享文件夹
@@ -75,4 +76,9 @@
 
 .. _Secure Shell: https://chrome.google.com/webstore/detail/pnhechapfaindjhompbnflcldabbghjo?utm_source=chrome-ntp-launcher
 
+Windows下安装Chef
+------------------
+
+下载地址： http://www.opscode.com/blog/2011/12/15/chef-client-installer-for-windows/
+常用的 Cookbooks:  http://community.opscode.com/cookbooks
 
