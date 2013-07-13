@@ -74,3 +74,44 @@ rpm 包转 deb 包
     xfce4-appfinder -c --disable-server
 
 参考： http://ubuntuforums.org/showthread.php?t=2031253
+
+中国镜像软件源
+-----------------
+
+Ubuntu 13.04 Raring :: 
+
+    deb http://mirrors.163.com/ubuntu/ raring main universe restricted multiverse
+    deb-src http://mirrors.163.com/ubuntu/ raring main universe restricted multiverse
+    deb http://mirrors.163.com/ubuntu/ raring-security universe main multiverse restricted
+    deb-src http://mirrors.163.com/ubuntu/ raring-security universe main multiverse restricted
+    deb http://mirrors.163.com/ubuntu/ raring-updates universe main multiverse restricted
+    deb http://mirrors.163.com/ubuntu/ raring-proposed universe main multiverse restricted
+    deb-src http://mirrors.163.com/ubuntu/ raring-proposed universe main multiverse restricted
+    deb http://mirrors.163.com/ubuntu/ raring-backports universe main multiverse restricted
+    deb-src http://mirrors.163.com/ubuntu/ raring-backports universe main multiverse restricted
+    deb-src http://mirrors.163.com/ubuntu/ raring-updates universe main multiverse restricted
+
+Ubuntu 12.04 Precise ::
+
+    deb http://mirrors.163.com/ubuntu/ precise main restricted
+    deb-src http://mirrors.163.com/ubuntu/ precise main restricted
+    deb http://mirrors.163.com/ubuntu/ precise-updates main restricted
+    deb-src http://mirrors.163.com/ubuntu/ precise-updates main restricted
+    deb http://mirrors.163.com/ubuntu/ precise universe
+    deb-src http://mirrors.163.com/ubuntu/ precise universe
+    deb http://mirrors.163.com/ubuntu/ precise-updates universe
+    deb-src http://mirrors.163.com/ubuntu/ precise-updates universe
+    deb http://mirrors.163.com/ubuntu/ precise multiverse
+    deb-src http://mirrors.163.com/ubuntu/ precise multiverse
+    deb http://mirrors.163.com/ubuntu/ precise-updates multiverse
+    deb-src http://mirrors.163.com/ubuntu/ precise-updates multiverse
+    deb http://mirrors.163.com/ubuntu/ precise-backports main restricted universe multiverse
+    deb-src http://mirrors.163.com/ubuntu/ precise-backports main restricted universe multiverse
+    deb http://mirrors.163.com/ubuntu/ precise-security main restricted
+    deb-src http://mirrors.163.com/ubuntu/ precise-security main restricted
+    deb http://mirrors.163.com/ubuntu/ precise-security universe
+    deb-src http://mirrors.163.com/ubuntu/ precise-security universe
+    deb http://mirrors.163.com/ubuntu/ precise-security multiverse
+    deb-src http://mirrors.163.com/ubuntu/ precise-security multiverse
+    deb http://extras.ubuntu.com/ubuntu precise main
+    deb-src http://extras.ubuntu.com/ubuntu precise main
