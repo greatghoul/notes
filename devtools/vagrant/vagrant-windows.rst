@@ -17,6 +17,24 @@
 
 需要注意的是，这里使用本地路径时，需要使用 Windows 风格的路径，即用 ``\`` 来作为路径分隔符。
 
+端口转发
+------------
+
+Vagrant 中配置端口转发非常方便
+
+.. code-block:: ruby
+
+    Vagrant.configure("2") do |config|
+      # other config here
+
+      config.vm.network :forwarded_port, guest: 80, host: 8080
+    end
+
+上面的配置会将 Vagrant 中的 80 端口和你本机的 8080 端口建立转发关系，这样你在本机访问 http://localhost:8080 
+就相当于访问 Vagrant 中的 http://localhost:80 了。
+
+**端口转发可以配置多组。**
+
 共享文件夹
 ------------
 
@@ -58,6 +76,8 @@
     [default] -- /home/vagrant/Blog
     [default] -- /home/vagrant/Notes
     [default] -- /home/vagrant/Projects
+
+如果你 ``vagrant up`` 后又修改了 Vagrantfile，要使之生效，需要执行 ``vagrant reload``
 
 在 Windows 下，不能使用 ``vagrant ssh`` 来直接访问 vagrnat，不过该命令会告诉你如何通过 ssh 连接 vagrant ::
 
