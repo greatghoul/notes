@@ -37,9 +37,14 @@ help:
 	@echo "  changes    to make an overview of all changed/added/deprecated items"
 	@echo "  linkcheck  to check all external links for integrity"
 	@echo "  doctest    to run all doctests embedded in the documentation (if enabled)"
+	@echo "  deploy     to deploy generated html content to server"
 
 clean:
 	-rm -rf $(BUILDDIR)/*
+
+deploy:
+	@echo "Deploying output content to server..."
+	@rsync -ruv --iconv=utf-8,utf-8 _build/html/ root@g2w.me:/home/notes/
 
 html:
 	$(SPHINXBUILD) -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
