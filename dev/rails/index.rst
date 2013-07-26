@@ -7,6 +7,7 @@ Rails开发笔记
    :maxdepth: 2
 
    tips.rst
+   models.rst
    views.rst
    logging.rst
    config.rst
