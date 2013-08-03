@@ -4,8 +4,9 @@ Python开发笔记
 .. toctree::
    :maxdepth: 2
    
-   tips
-   packages/index
+   tips.rst
+   pip.rst
+   packages/index.rst
 
 文章
 ------
