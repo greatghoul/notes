@@ -80,3 +80,20 @@ Tips & Ticks
 这样我们就无法再次添加 submodule 了，修复的方法也简单，只有在 ``.git/modules`` 下面手动删除相关目录即可。
 
 参考： http://stackoverflow.com/a/12072517/260793
+
+查看当前 Commit 或者最近 Commit 的详细信息，比如 Tag 
+------------------------------------------------------
+
+查看当前 Commit 的 Tag 描述信息 ::
+
+    $ # git describe
+    V1.8.3
+
+查看更多细节 ::
+
+    $ git log -n 1 --decorate --pretty=oneline
+    e92c98e6443b8761291b6c9305688005cb583987 (HEAD, tag: V1.8.3) Merge branch 'devel' of ...
+
+不限制行数 ::
+
+    $ git log --decorate --pretty=oneline
