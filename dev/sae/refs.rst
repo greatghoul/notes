@@ -4,3 +4,8 @@
  * `SAE Python 开发者手册 <http://python.sinaapp.com/doc/index.html>`_ - SAEPython
  * `42分钟乱入 SAE 手册 <http://chaos2sae.readthedocs.org/en/latest/>`_ - Zoom.Quiet
 
+ **Oauth2**
+
+ * `python 连接新浪微博API时的OAuth2.0认证 <http://blog.163.com/chong_alexander/blog/static/2064871622012453627558/>`_
+ * `python调用新浪微博API实践 <http://www.cnblogs.com/wly923/archive/2013/04/28/3048700.html>`_
+
