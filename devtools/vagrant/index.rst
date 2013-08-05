@@ -9,5 +9,6 @@ Vagrant 笔记
     :maxdepth: 2
 
     vagrant-windows.rst
+    issues.rst
 
 
