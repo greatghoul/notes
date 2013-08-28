@@ -7,3 +7,4 @@
    7habits.rst
    refactoring.rst
    hackers-and-painters.rst
+   rework.rst
