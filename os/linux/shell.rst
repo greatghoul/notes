@@ -60,3 +60,4 @@ shell 中以 ``$n`` 来接收终端传递的参数，比如 ``$1`` 表示第一�
 
     alias gohome="cd /path/to/your/target"
 
+参考资料： http://stackoverflow.com/questions/255414/why-doesnt-cd-work-in-a-bash-shell-script
