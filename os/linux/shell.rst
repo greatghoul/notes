@@ -7,7 +7,7 @@ Shell开发笔记
 条件判断语法
 ~~~~~~~~~~~~~
 
-.. code-block:: shell
+.. code-block:: bash
 
     if   [ expression1 ]; then
         # ...
@@ -24,7 +24,7 @@ shell 中以 ``$n`` 来接收终端传递的参数，比如 ``$1`` 表示第一�
 
 判断参数是否相等
 
-.. code-block:: shell
+.. code-block:: bash
 
     if   [ "$1" = "value1" ]; then
         # do something
@@ -32,7 +32,7 @@ shell 中以 ``$n`` 来接收终端传递的参数，比如 ``$1`` 表示第一�
 
 判断参数是否为空字符串或者 null
 
-.. code-block:: shell
+.. code-block:: bash
 
     if [ -z "$1" ]; then
         # do something

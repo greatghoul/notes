@@ -7,4 +7,3 @@ Linux笔记
    common.rst
    shell.rst
    ubuntu.rst
-   vagrant.rst
