@@ -23,3 +23,9 @@ Python PIP 使用笔记
 
     sudo pip install -v Flask -i http://pypi.douban.com/simple
 
+如果需要设置为全局的 Windows 修改 `%home%/pip/pip.conf` ，Linux 修改 `~/.pip/pip.conf`
+
+增加以下内容 ::
+
+    [global]
+    index-url = http://pypi.douban.com/simple
