@@ -4,6 +4,14 @@ Rails 配置笔记
 Assets配置
 ------------
 
+将 scss 和 coffee 文件也加入预编译的列表
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+在生产环境对 `assets:precompile` 时，只会将预编译 js 和 css 文件，而不会处理 scss 和 coffee，
+需要在 `production.rb` 中手动设置： ::
+
+    config.assets.precompile += %w( *.js *.scss *.coffee *.css )
+
 禁用指定静态文件的 assets digest
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
