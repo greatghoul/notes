@@ -1,3 +1,5 @@
+.. _ubuntu:
+
 Ubuntu笔记
 ===========
 
@@ -43,7 +45,7 @@ rpm 包转 deb 包
 
 .. code-block:: bash
 
-    sudo apt-get install gnome-shell       
+    sudo apt-get install gnome-shell
     sudo apt-get install gnome-themes*
     sudo  /usr/lib/lightdm/lightdm-set-defaults  -s  gnome-shell
 
@@ -78,7 +80,7 @@ rpm 包转 deb 包
 中国镜像软件源
 -----------------
 
-Ubuntu 13.04 Raring :: 
+Ubuntu 13.04 Raring ::
 
     deb http://mirrors.163.com/ubuntu/ raring main universe restricted multiverse
     deb-src http://mirrors.163.com/ubuntu/ raring main universe restricted multiverse

@@ -8,5 +8,6 @@
 
     git.rst
     vim/index.rst
+    subl.rst
     vagrant/index.rst
 
