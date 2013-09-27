@@ -6,6 +6,7 @@ RubyGems Notes
 .. toctree::
    :maxdepth: 2
 
+   mina.rst
    devise.rst
    cancan.rst
    authlogic.rst
