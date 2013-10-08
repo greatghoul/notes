@@ -18,6 +18,19 @@ XUBUNTU下出现WARNING: gnome-keyring的问题
 
 系统重启后就正常了，参考资料 `^1 <http://laslow.net/2012/05/06/gnome-keyring-issues-in-ubuntu-12-04/>`_
 
+NO_PUBKEY 16126D3A3E5C1192
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+新安装的系统，在执行 `sudo apt-get update` 结束时，会报如下错误 ::
+
+    W: GPG error: http://extras.ubuntu.com precise Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 16126D3A3E5C1192
+
+要解决这个错误，需要执行如下命令添加 PUBLIC KEY ::
+
+    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 16126D3A3E5C1192
+
+参考： http://ubuntuforums.org/showthread.php?t=1589807
+
 制作USB启动盘
 ~~~~~~~~~~~~~~~~~~~
 比如 USB 的设置位置为 `/dev/sdb` 
