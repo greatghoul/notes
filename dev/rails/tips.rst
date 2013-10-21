@@ -117,3 +117,18 @@ development默认禁用缓存，修改 ``config/enviroments/development.rb`` 启
 缓存默认是以文件形式保存，文件位置 ``./tmp/cache``
 
 参考 http://rubyer.me/blog/2012/09/04/speed-up-with-rails-cache/
+
+指定默认的时间格式
+~~~~~~~~~~~~~~~~~~~
+
+Rails 默认的时间输出格子可读性不好，通过情况下，我们需要重置，因为每次手动 strftime 实在太麻烦。
+
+建立 ``config/initializers/time_formats.rb`` 文件，内容如下
+
+.. code-block:: ruby
+
+    Time::DATE_FORMATS[:default] = '%Y-%m-%d %H:%M:%S'
+    Time::DATE_FORMATS[:long] = '%Y-%m-%d %H:%M:%S'
+    Time::DATE_FORMATS[:short] = '%H:%M'
+
+参考 http://api.rubyonrails.org/classes/DateTime.html#method-i-to_formatted_s
