@@ -13,3 +13,4 @@ RubyGems Notes
    rmre.rst
    simple_form.rst
    spreadsheet.rst
+   meta_search.rst
