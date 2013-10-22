@@ -1,4 +1,4 @@
-.. gem_meta_search::
+.. _gem_meta_search:
 
 meta_search 笔记
 ================
