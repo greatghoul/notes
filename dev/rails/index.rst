@@ -11,4 +11,5 @@ Rails开发笔记
    views.rst
    logging.rst
    config.rst
+   test/index.rst
    gems/index.rst
