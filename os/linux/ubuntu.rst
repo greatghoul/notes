@@ -130,3 +130,8 @@ Ubuntu 12.04 Precise ::
     deb-src http://mirrors.163.com/ubuntu/ precise-security multiverse
     deb http://extras.ubuntu.com/ubuntu precise main
     deb-src http://extras.ubuntu.com/ubuntu precise main
+
+参考资料
+------------
+
+- `HOW TO USE MULTIPLE MONITORS IN XUBUNTU / XFCE (EXTENDED DISPLAY INSTEAD OF MIRROR) <http://www.webupd8.org/2012/11/how-to-use-multiple-monitors-in-xubuntu.html>`_

@@ -1,4 +1,5 @@
-======================
+.. _dev_javascript:
+
 JavaScript 笔记
 ======================
 
@@ -35,3 +36,8 @@ Tips & Tricks
         return '确认要退出吗？';
     };
 
+
+参考资料
+----------
+
+- `Iframe高度自适应（兼容IE/Firefox、同域/跨域） <http://www.ccvita.com/376.html>`_
