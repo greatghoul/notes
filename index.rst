@@ -10,6 +10,7 @@
 
     dev/index.rst
     devtools/index.rst
+    projects.rst
     databases/index.rst
     os/index.rst
     reading/index.rst
