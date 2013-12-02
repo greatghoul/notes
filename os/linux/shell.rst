@@ -60,4 +60,12 @@ shell 中以 ``$n`` 来接收终端传递的参数，比如 ``$1`` 表示第一�
 
     alias gohome="cd /path/to/your/target"
 
+文件内容指替换
+-----------------
+
+将指定目录下文件中的 &rquao 两端都补上空格 ::
+
+    sed -i "s/\s*\&raquo;\s*/ \&raquo; /g" `grep '&raquo;' app/views/ -rl`
+
+
 参考资料： http://stackoverflow.com/questions/255414/why-doesnt-cd-work-in-a-bash-shell-script
